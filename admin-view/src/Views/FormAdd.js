@@ -17,7 +17,7 @@ function FormAdd() {
         receipt:'',
 
   })
-
+ let formData = new FormData
   const changeItemFormInput = (e) => {
     const value = e.target.value
     const field = e.target.name
@@ -52,7 +52,7 @@ function FormAdd() {
       <div className="formUser">
         <div className="form">
           <div className="container-image">
-            <h2> Login</h2>
+            <h2> New Reimbursement</h2>
           </div>
           <form className="form-add" onSubmit={(e) =>{
         e.preventDefault()

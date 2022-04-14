@@ -64,7 +64,7 @@ function EditProfile() {
       <div className="formUser">
         <div className="form">
           <div className="container-image">
-            <h2> Login</h2>
+            <h2> Edit Profile</h2>
           </div>
           <form className="form-add" onSubmit={(e) =>{
         e.preventDefault()
