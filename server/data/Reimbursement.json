@@ -1,0 +1,23 @@
+[
+  {
+      "id": 1,
+      "datePurchase": "2021-04-13",
+      "description": "Pembayaran Tol",
+      "receipt": "https://ik.imagekit.io/c8mrz0dfnci/2424314699_LFhQY5oc6.jpeg",
+      "amount": 200000,
+      "status": "Submitted",
+      "UserId": 1,
+      "ActionId": 1 
+  },
+  {
+    "id": 2,
+    "datePurchase": "2021-04-12",
+    "description": "Pembayaran tol2",
+    "receipt": "https://ik.imagekit.io/c8mrz0dfnci/2424314699_LFhQY5oc6.jpeg",
+    "amount": 300000,
+    "status": "Submitted",
+    "UserId": 1,
+    "ActionId": 1 
+  }
+  
+]
