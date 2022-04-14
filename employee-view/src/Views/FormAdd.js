@@ -3,7 +3,8 @@ import {useNavigate} from 'react-router-dom'
 import NavbarHome from '../Components/NavbarHome'
 import { addReimbursement } from '../store/actionCreator'
 import { useDispatch } from 'react-redux';
-
+import errorAlert from '../hooks/errorAlert';
+import successAlert from '../hooks/successAlert';
 
 function FormAdd() {
     const navigate = useNavigate()
@@ -28,16 +29,16 @@ function FormAdd() {
   const addNewItem = () => {
     dispatch(addReimbursement(itemsForm))
     .then(() => {
-      // successAlert('Welcome to CMS Unicool');
+      successAlert('Success add new reimbursement');
       navigate('/');
     })
     .catch((err) => {
       console.log(err);
-      // if (err == 'Error: Bad Request') {
-      //   errorAlert(err, 'Please input field data');
-      // } else {
-      //   errorAlert(err, 'Invalid email/password');
-      // }
+      if (err == 'Error: Bad Request') {
+        errorAlert(err, 'Please input field data');
+      } else {
+        errorAlert(err, 'PLeease fill the blank');
+      }
     });
   };
 

@@ -32,7 +32,7 @@ function EditProfile() {
     },[])
 
     const EditNewProfile = () =>{
-        fetch(`http://localhost:10000/users/${id}`, {
+        fetch(`https://reimbursement-server.herokuapp.com/users/${id}`, {
             method: 'PUT', // or 'PUT'
          headers: {
            'Content-Type': 'application/json',
