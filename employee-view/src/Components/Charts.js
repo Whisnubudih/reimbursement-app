@@ -26,7 +26,7 @@ function Chart() {
 
   useEffect(()=> {
     const fetchData = () =>  {
-      fetch(`http://localhost:10000/reimbursementid`, {
+      fetch(`https://reimbursement-server.herokuapp.com/reimbursementid`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',

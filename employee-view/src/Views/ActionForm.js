@@ -21,7 +21,7 @@ function ActionForm() {
 
     const {id} = useParams()
     const newAction = () =>{
-        fetch(`http://localhost:10000/status/${id}`, {
+        fetch(`https://reimbursement-server.herokuapp.com/status/${id}`, {
             method: 'PATCH', // or 'PUT'
          headers: {
            'Content-Type': 'application/json',
