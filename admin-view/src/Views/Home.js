@@ -1,13 +1,13 @@
 import React, {useEffect} from 'react'
 import Cards from '../Components/Cards'
 import { useSelector,useDispatch } from 'react-redux';
-// import {setClients} from '../store/actionCreator'
+
 import NavbarHome from '../Components/NavbarHome'
 import { fetchProducts } from '../store/actionCreator';
 
 
 function Home (){
-  const { products, productsLoading, productsError } = useSelector((state) => state.reimbursementReducer);
+  const { products} = useSelector((state) => state.reimbursementReducer);
  
   const dispatch = useDispatch();
 
@@ -15,13 +15,7 @@ function Home (){
     dispatch(fetchProducts());
   }, []);
 
-  // if (productsLoading) {
-  //   return <Loader />;
-  // }
-
-  // if (productsError) {
-  //   return <div>{JSON.stringify(productsError)}</div>;
-  // }
+  
 
 
   
